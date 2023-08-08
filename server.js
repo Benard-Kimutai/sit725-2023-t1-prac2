@@ -2,7 +2,7 @@ let express =require('express');
 
 let app= express();
 
-let port = process.env.port || 3000;
+let port = process.env.port || 3001;
 
 app.use(express.static(__dirname + '/'));
 
