@@ -10,8 +10,8 @@ app.get('/',(req,res)=>{
     res.render('index.html');
 });
 app.get('/addTwoNumbers', (req,res)=>{
-    let num1= req.query.number1;
-    let num2=req.query.number2;
+    let num1= Number(req.query.number1);
+    let num2=Number(req.query.number2);
 
     let sum =num1 + num2;
 
